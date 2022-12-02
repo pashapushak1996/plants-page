@@ -65,3 +65,48 @@ body, html {
     flex: 1 1 auto;
 }
 
+/* || Variables */
+
+:root {
+    /* || Colors */
+    --clr-primary-200: #636060;
+    --clr-primary-300: #717171;
+
+    --clr-accent-200: #499A18;
+    --clr-accent-300: #E06733;
+
+    --clr-neutral-200: #EDF2EC;
+    --clr-neutral-300: #010201;
+
+    /*|| Typography */
+    --ff-primary: 'Inter', sans-serif;
+    --ff-accent: 'Inika', serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-nav: var(--ff-accent);
+    --ff-heading-primary: var(--ff-primary);
+    --ff-heading-secondary: var(--ff-accent);
+    --ff-button-primary:var(--ff-primary);
+    --ff-button-secondary:var(--ff-accent);
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-100: 0.9375rem; /*15px*/
+    --fs-200: 1rem;
+    --fs-300: 1.25rem; /*20px*/
+    --fs-400: 1.5625rem; /*25px*/
+    --fs-500: 2.1875rem; /*35px*/
+    --fs-600: 2.5rem; /*40px*/
+    --fs-700: 2.8125rem; /*45px*/
+
+    --fs-nav: var(--fs-200);
+    --fs-body: var(--fs-300);
+    --fs-heading-primary: var(--fs-700);
+    --fs-heading-secondary: var(--fs-600);
+
+    --fs-button-primary:var(--fs-200);
+    --fs-button-secondary: var(--fs-300);
+}
+
