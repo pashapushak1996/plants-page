@@ -86,8 +86,8 @@ body, html {
     --ff-nav: var(--ff-accent);
     --ff-heading-primary: var(--ff-primary);
     --ff-heading-secondary: var(--ff-accent);
-    --ff-button-primary:var(--ff-primary);
-    --ff-button-secondary:var(--ff-accent);
+    --ff-button-primary: var(--ff-primary);
+    --ff-button-secondary: var(--ff-accent);
 
     --fw-light: 300;
     --fw-regular: 400;
@@ -106,7 +106,23 @@ body, html {
     --fs-heading-primary: var(--fs-700);
     --fs-heading-secondary: var(--fs-600);
 
-    --fs-button-primary:var(--fs-200);
+    --fs-button-primary: var(--fs-200);
     --fs-button-secondary: var(--fs-300);
+}
+
+/*|| General settings*/
+body {
+    max-width: 1440px;
+
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    color: var(--clr-primary-200);
+}
+
+[class*="__container"] {
+    max-width: 1250px;
+    padding: 0px 15px;
+
+    margin-inline: auto;
 }
 
