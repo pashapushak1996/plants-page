@@ -168,11 +168,13 @@ body {
 
     border-radius: 1rem;
     outline: none;
+    cursor: pointer;
 }
 
 .button--outlined {
     color: var(--clr-accent-300);
 
+    background-color: transparent;
     border: 1px solid var(--clr-accent-300);
 }
 
@@ -512,6 +514,123 @@ body {
         text-align: left;
     }
 }
+
+/* || Services */
+
+.services {
+    padding: 2.1875rem 0 7.5rem;
+
+    background-color: var(--clr-neutral-200);
+}
+
+.services__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8.875rem;
+
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 36em) {
+    .services {
+        padding: 3.75rem 0 4.375rem;
+    }
+
+    .services__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        margin-bottom: 2.5rem;
+    }
+}
+
+.services__title {
+    color: var(--clr-accent-200);
+    font-family: var(--ff-heading-secondary);
+    font-size: var(--fs-heading-secondary);
+    line-height: 130%;
+}
+
+.services__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2.375rem;
+}
+
+.services__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 10rem;
+
+    text-align: center;
+}
+
+@media (max-width: 36em) {
+    .services__buttons {
+        flex-wrap: wrap;
+        gap: 0.625rem;
+    }
+
+    .services__button {
+        max-width: 7.5rem;
+    }
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.375rem;
+}
+
+@media (max-width: 36em) {
+    .services__cards {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}
+
+@media (max-width: 48em) {
+    .services__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.service-card {
+    max-width: 330px;
+
+    border: 1px solid #E3E1D5;
+    border-radius: 1.25rem;
+
+    overflow: hidden;
+}
+
+.service-card__body {
+    padding: 0.625rem 0px 2.25rem 0px;
+
+    text-align: center;
+}
+
+.service-card__title {
+    margin-bottom: 0.625rem;
+
+    color: var(--clr-accent-300);
+    font-weight: var(--fw-bold);
+}
+
+.service-card__text {
+    padding-inline: 0.5rem;
+
+    font-size: var(--fs-200);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
 
 
 
